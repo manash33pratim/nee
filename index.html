@@ -698,11 +698,11 @@
 										<div class="icon"><span class="fa fa-chevron-down"></span></div>
 										<select name="Services" id="options" onchange="showRow()" class="form-control">
 											<option value="">Select Your Services</option>
-											<option value="Civil Engineering Works">Civil Engineering Works</option>
-											<option value="In-Situ Investigative Works">In-Situ Investigative Works</option>
-											<option value="Laboratory test and Reports">Laboratory test &amp; Reports</option>
-											<option value="Consultancy">Consultancy</option>
-											<option value="Others">Other Services</option>
+											<option value="option1">Civil Engineering Works</option>
+											<option value="option2">In-Situ Investigative Works</option>
+											<option value="option3">Laboratory test &amp; Reports</option>
+											<option value="option4">Consultancy</option>
+											<option value="">Other Services</option>
 										</select>
 									</div>
 								</div>
@@ -760,7 +760,7 @@
 								// Show the selected row
 								//   var selectedRow = document.getElementById("row" + selectedOption.charAt(selectedOption.length - 1));
 								//   selectedRow.classList.remove("hidden");
-								if (selectedOption == "Civil Engineering Works") {
+								if (selectedOption == "option1") {
 
 									document.getElementById("content").innerHTML =
 										`<div id="row1">
@@ -785,7 +785,7 @@
 										</div>
 									</div>`;
 								}
-								else if (selectedOption == "In-Situ Investigative Works") {
+								else if (selectedOption == "option2") {
 									document.getElementById("content").innerHTML =
 										`<div id="row2">
 										<div>
@@ -811,7 +811,7 @@
 										</div>
 									</div>`;
 								}
-								else if (selectedOption == "Laboratory test and Reports") {
+								else if (selectedOption == "option3") {
 									document.getElementById("content").innerHTML = `						<div id="row3" >
 							<div>
 								<div class="form-group">
@@ -836,7 +836,7 @@
 						</div>`;
 								}
 
-								else if (selectedOption == "Consultancy") {
+								else if (selectedOption == "option4") {
 									document.getElementById("content").innerHTML = `						<div id="row4" >
 							<div>
 								<div class="form-group">
