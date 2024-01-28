@@ -682,13 +682,13 @@
 						<h3>Request Quote</h3>
 						<div class="">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="First Name" id="fname">
+								<input type="text" class="form-control" name="Name" placeholder="Name" id="fname">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Last Name" id="lname">
+								<input type="text" class="form-control" name="Email" placeholder="Email" id="lname">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Phone" id="phone">
+								<input type="text" class="form-control" name="Phone" placeholder="Phone" id="phone">
 							</div>
 						</div>
 						<div class="">
@@ -696,7 +696,7 @@
 								<div class="form-field">
 									<div class="select-wrap">
 										<div class="icon"><span class="fa fa-chevron-down"></span></div>
-										<select name="" id="options" onchange="showRow()" class="form-control">
+										<select name="Services" id="options" onchange="showRow()" class="form-control">
 											<option value="">Select Your Services</option>
 											<option value="option1">Civil Engineering Works</option>
 											<option value="option2">In-Situ Investigative Works</option>
@@ -715,7 +715,7 @@
 
 
 
-						<div id="row4" class="hidden">
+						<!-- <div id="row4" class="hidden">
 							<div>
 								<div class="form-group">
 									<div class="form-field">
@@ -743,7 +743,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<script>
 							function showRow() {
@@ -769,7 +769,7 @@
 											<div class="form-field">
 												<div class="select-wrap">
 													<div class="icon"><span class="fa fa-chevron-down"></span></div>
-													<select name="" id="options" class="form-control">
+													<select name="Sub selection" id="options" class="form-control">
 														<option value="">Select Your Services</option>
 														<option value="option1">Geo-Technical Investigation</option>
 														<option value="option2">Architectural plans</option>
@@ -793,7 +793,7 @@
 												<div class="form-field">
 													<div class="select-wrap">
 														<div class="icon"><span class="fa fa-chevron-down"></span></div>
-														<select name="" id="options" class="form-control">
+														<select name="Sub selection" id="options" class="form-control">
 															<option value="">Select Your Services</option>
 															<option value="option1">Standard Penetration Tests (S.P.T.)</option>
 															<option value="option2">Dynamic Cone Penetration Tests (DCPT)</option>
@@ -818,7 +818,7 @@
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="options" class="form-control">
+											<select name="Sub selection" id="options" class="form-control">
 												<option value="">Select Your Services</option>
 												<option value="option1">Soil test</option>
 												<option value="option2">Chemical analysis of soil</option>
@@ -843,7 +843,7 @@
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon"><span class="fa fa-chevron-down"></span></div>
-											<select name="" id="options" class="form-control">
+											<select name="Sub selection" id="options" class="form-control">
 												<option value="">Select Your Services</option>
 												<option value="option1">Structural design and drawings of buildings
 												</option>
