@@ -1307,13 +1307,13 @@ textarea.form-control {
 	background-position: top center;
 	background-attachment: fixed;
 	padding: 5em 0;
-	z-index: 0;
-	.aside-stretch,{
+	z-index: 0;}
+	.aside-stretch{
 		background-color: $primary;
 		&:after{
 			background-color: $primary;
 		}
-	}
+
 	&.aside-stretch-right{
 		background-color: $secondary;
 		&:after{
@@ -2394,4 +2394,4 @@ textarea.form-control {
 		border: none;
 		background: #f8f8f8;
 	}
-}
+}}
