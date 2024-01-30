@@ -4620,6 +4620,27 @@ input[type="button"].btn-block {
     border-top-color: #ffe8a1; }
   .alert-warning .alert-link {
     color: #533f03; }
+    
+    .rowemp {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .columnemp {
+        flex: 0 0 auto;
+        margin-right: 15px; /* Adjust the margin as needed */
+    }
+
+    .cardemp{
+        width: 300px; /* Adjust the card width as needed */
+        display: inline-block;
+        text-align: center;
+    }
+
+    .containeremp {
+        padding: 15px; /* Adjust padding as needed */
+    }
 
 .alert-danger {
   color: #721c24;
