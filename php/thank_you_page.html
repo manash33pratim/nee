@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css"db>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .thank-you-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .thank-you-message {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .redirect-timer {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .return-button {
+            background-color: #0986d9;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .return-button:hover {
+            background-color: #085d8b;
+        }
+
+        .site-footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you-message">
+            <p class="ml-2">Thank you for reaching out to us. We will get back to you shortly.</p>
+        </div>
+        <div class="redirect-timer" id="redirect-timer">Redirecting in 6 seconds...</div>
+        <a href="index.html" class="btn btn-primary">Return to Main Page</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Countdown timer
+        let countdown = 5;
+        setInterval(function () {
+            countdown--;
+            document.getElementById("redirect-timer").innerText = `Redirecting in ${countdown} seconds...`;
+
+            if (countdown <= 0) {
+                window.location.replace("index.html");
+            }
+        }, 1000);
+    </script>
+
+    <footer class="site-footer">
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://northeastengineers.in" target="_blank" style="color: #fff;">North East Engineers</a></p>
+    </footer>
+</body>
+</html>
