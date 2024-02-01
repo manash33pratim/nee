@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $body, $headers);
 
     // Optionally, you can redirect the user after successful submission
-    header("Location: thank_you.html");
+    header("Location: thank_you_page.html");
     exit();
 }
 ?>
