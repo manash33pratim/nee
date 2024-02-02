@@ -116,12 +116,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Countdown timer
-        let countdown = -1;
+        let countdown = 5;
         setInterval(function () {
             countdown--;
             document.getElementById("redirect-timer").innerText = `Redirecting in ${countdown} seconds...`;
 
-            if (countdown = 0) {
+            if (countdown <= 0) {
                 window.location.replace("/index.html");
             }
         }, 1000);
